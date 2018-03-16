@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive 12 column grid</title>
+    <link rel="stylesheet" type="text/css" href="simple-grid.css">
+    <style>
+    [class*='col-'] {
+        background-color: #B5DCFF;
+    }
+    [class*='col-'] > p {
+        background-color: #0787F7; 
+        padding: 10px 0;
+        margin: 0;
+        text-align: center; 
+        color: white; 
+    }
+    .outline, .outline *{
+        outline: 1px solid #fff; 
+    }
+    </style>
+</head>
+<body>
+    <h1>Responsive 12 column grid</h1>
+    <h3>Three break points. Apply classes to your elements for your desktop website and mobile sizing will be calculated automatically.</h3>
+    <p>Available Classes:
+        <ul>
+            <li>.row</li>
+            <li>.col-1</li>
+            <li>.col-2</li>
+            <li>.col-3</li>
+            <li>.col-4</li>
+            <li>.col-5</li>
+            <li>.col-6</li>
+            <li>.col-7</li>
+            <li>.col-8</li>
+            <li>.col-9</li>
+            <li>.col-10</li>
+            <li>.col-11</li>
+            <li>.col-12</li>
+            <li>.hide-small</li>
+            <li>.hide-medium</li>
+            <li>.hide-large</li>
+        </ul>
+    </p>
+    <p class="col-12 hide-small hide-medium">Large View Only: class="col-12 hide-small hide-medium"</p>
+    <p class="col-12 hide-small hide-large">Medium View Only: class="col-12 hide-small hide-large"</p>
+    <p class="col-12 hide-large hide-medium">Small View Only: class="col-12 hide-medium hide-large"</p>
+
+    <div class="outline">
+    <div class="row">
+        <div class="col-1"><p>col-1</p></div> 
+        <div class="col-1"><p>col-1</p></div> 
+        <div class="col-1"><p>col-1</p></div> 
+        <div class="col-1"><p>col-1</p></div> 
+        <div class="col-1"><p>col-1</p></div> 
+        <div class="col-1"><p>col-1</p></div>
+        <div class="col-1"><p>col-1</p></div> 
+        <div class="col-1"><p>col-1</p></div> 
+        <div class="col-1"><p>col-1</p></div> 
+        <div class="col-1"><p>col-1</p></div> 
+        <div class="col-1"><p>col-1</p></div> 
+        <div class="col-1"><p>col-1</p></div> 
+    </div> 
+    <div class="row">
+        <div class="col-2"><p>col-2</p></div> 
+        <div class="col-2"><p>col-2</p></div> 
+        <div class="col-2"><p>col-2</p></div>
+        <div class="col-2"><p>col-2</p></div> 
+        <div class="col-2"><p>col-2</p></div> 
+        <div class="col-2"><p>col-2</p></div> 
+    </div> 
+    <div class="row">
+        <div class="col-3"><p>col-3</p></div> 
+        <div class="col-1 hide-large hide-small"><p>col-1</p></div>
+        <div class="col-3"><p>col-3</p></div> 
+        <div class="col-1 hide-large hide-small"><p>col-1</p></div>
+        <div class="col-3"><p>col-3</p></div>
+        <div class="col-1 hide-large hide-small"><p>col-1</p></div>
+        <div class="col-3"><p>col-3</p></div>
+        <div class="col-1 hide-large hide-small"><p>col-1</p></div> 
+    </div>
+    <div class="row">
+        <div class="col-4"><p>col-4</p></div>
+        <div class="col-4"><p>col-4</p></div>
+        <div class="col-4"><p>col-4</p></div>
+    </div>
+    <div class="row">
+        <div class="col-5"><p>col-5</p></div>
+        <div class="col-5"><p>col-5</p></div>
+        <div class="col-2 hide-medium"><p>col-2</p></div>
+    </div>
+    <div class="row">
+        <div class="col-6"><p>col-6</p></div>
+        <div class="col-6"><p>col-6</p></div>
+    </div>
+    <div class="row">
+        <div class="col-7"><p>col-7</p></div>
+        <div class="col-5"><p>col-5</p></div>
+    </div>
+    <div class="row">
+        <div class="col-8"><p>col-8</p></div>
+        <div class="col-4"><p>col-4</p></div>
+    </div>
+    <div class="row">
+        <div class="col-9"><p>col-9</p></div>
+        <div class="col-3 hide-medium"><p>col-3</p></div>
+    </div>
+    <div class="row">
+        <div class="col-10"><p>col-10</p></div>
+        <div class="col-2 hide-medium"><p>col-2</p></div>
+    </div>
+    <div class="row">
+        <div class="col-11"><p>col-11</p></div>
+        <div class="col-1 hide-medium hide-small"><p>col-1</p></div>
+    </div>
+    <div class="row">
+        <div class="col-12"><p>col-12</p></div>
+    </div>
+</div>
+
+</body>
+</html>
